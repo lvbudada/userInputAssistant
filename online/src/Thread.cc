@@ -6,6 +6,12 @@ using std::endl;
 
 namespace wd
 {
+
+namespace current_thread
+{
+    __thread const char * threadName = "wd thread";
+}
+
 void Thread::start()
 {
     pthread_create(&_pthid, nullptr, threadfunc, this);
@@ -16,6 +22,8 @@ void Thread::start()
 void* Thread::threadfunc(void *arg)
 {
     Thread * pthread = static_cast<Thread*>(arg);
+
+    current_thread::threadName = pthread->_name == string() ? "wd thread" : pthread->_name.c_str();
     if(pthread)
     {
         pthread->_cb();

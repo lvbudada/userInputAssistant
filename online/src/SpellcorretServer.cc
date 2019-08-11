@@ -4,8 +4,8 @@
 namespace wd
 {
 
-SpellcorretServer::SpellcorretServer(const string & confFilePath)
-: _conf(confFilePath)
+SpellcorretServer::SpellcorretServer(Configuration & conf)
+: _conf(conf)
 , _tcpServer(_conf.getConfigMap()["ip"], (unsigned short)stoi(_conf.getConfigMap()["port"]))
 , _threadpool(stoi(_conf.getConfigMap()["threadNum"]), stoi(_conf.getConfigMap()["queSize"]))    
 {

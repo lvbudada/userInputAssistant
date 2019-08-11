@@ -59,6 +59,9 @@ private:
     //void statistic(set<int> & iset);  //进行计算
     //int distance(const string & rhs);  //计算最小编辑距离
     void response(/*Cache & cache*/);  //响应客户端请求
+
+    //查询缓存
+    bool queryCache();
     
 private:
     string _queryWord;  //等待查询的单词
