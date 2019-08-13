@@ -1,0 +1,45 @@
+{
+   "fcscsd" : {
+      "1" : "discs",
+      "2" : "faced",
+      "3" : "fascia",
+      "4" : "viscid",
+      "5" : "fiscal"
+   },
+   "ni" : {
+      "ucsase_space" : "aaa",
+      "vcsdvcslength" : 3
+   },
+   "nica" : {
+      "1" : "nice",
+      "2" : "nick",
+      "3" : "nina",
+      "4" : "dice",
+      "5" : "isa"
+   },
+   "nihao" : {
+      "1" : "nina",
+      "2" : "chaos",
+      "3" : "chap",
+      "4" : "chat",
+      "5" : "divan"
+   },
+   "string" : {
+      "length" : 3,
+      "use_space" : "aaa"
+   },
+   "yiqi" : {
+      "1" : "fili",
+      "2" : "ici",
+      "3" : "vii",
+      "4" : "viii",
+      "5" : "ii"
+   },
+   "一起" : {
+      "1" : "一起",
+      "2" : "一世",
+      "3" : "一丝",
+      "4" : "一书",
+      "5" : "一五"
+   }
+}
